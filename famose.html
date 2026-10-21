@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelli - Ferrari Web Site</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="badge-scuderia">
+                <i class="fa-solid fa-horse"></i>
+            </span>
+            <span class="logo-text">FERRARI<span class="dot">.IT</span></span>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="famose.html" class="nav-link active">Modelli</a>
+            <a href="storia.html" class="nav-link">Storia</a>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="hero-content">
+            <span class="sub-badge"><i class="fa-solid fa-flag-checkered"></i> Scuderia Maranello</span>
+            <h1>Benvenuti al Ferrari Web Site</h1>
+            <p class="subtitle">Questo è il mio sito web dedicato al mito e all'eccellenza automobilistica italiana.</p>
+            <p class="description">Qui puoi trovare informazioni, schede tecniche e immagini sui modelli di Ferrari più iconici della storia.</p>
+            
+            <div class="hero-buttons">
+                <button id="btn-toggle" class="btn" onclick="toggleFerrari()">
+                    <i class="fa-solid fa-eye" id="btn-icon"></i> 
+                    <span id="btn-text">Mostra Ferrari Famose</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=1000&q=80" alt="Ferrari Principale" class="main-img">
+            <div class="img-caption">
+                <span>SF90 Stradale - 1000 CV</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="galleria" class="gallery-section hidden">
+        <div class="section-title">
+            <h2>Le Ferrari più Famose della Storia</h2>
+            <p>Le pietre miliari dell'automobilismo firmate dal Cavallino Rampante.</p>
+        </div>
+
+        <div class="grid-ferrari">
+            
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="images/f40.jpg" alt="Ferrari F40">
+                    <span class="year-badge">1987</span>
+                </div>
+                <div class="card-body">
+                    <h3>Ferrari F40</h3>
+                    <p>L'ultima superlativa creazione voluta personalmente da Enzo Ferrari, un'icona cruda e purissima con motore Twin-Turbo.</p>
+                    <div class="card-specs">
+                        <div><span>Potenza:</span> <strong>478 CV</strong></div>
+                        <div><span>Velocità:</span> <strong>324 km/h</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="images/enzo.jpg" alt="Ferrari Enzo">
+                    <span class="year-badge">2002</span>
+                </div>
+                <div class="card-body">
+                    <h3>Ferrari Enzo</h3>
+                    <p>Prodotta nei primi anni 2000 in serie limitata, sintetizza e racchiude la tecnologia di Formula 1 del periodo Schumacher.</p>
+                    <div class="card-specs">
+                        <div><span>Potenza:</span> <strong>660 CV</strong></div>
+                        <div><span>Velocità:</span> <strong>350 km/h</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="images/laferrari.jpg" alt="LaFerrari">
+                    <span class="year-badge">2013</span>
+                </div>
+                <div class="card-body">
+                    <h3>LaFerrari</h3>
+                    <p>La prima hypercar ibrida di Maranello ad altissime prestazioni, capace di erogare complessivamente 963 CV con il sistema HY-KERS.</p>
+                    <div class="card-specs">
+                        <div><span>Potenza:</span> <strong>963 CV</strong></div>
+                        <div><span>Velocità:</span> <strong>> 350 km/h</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="images/250gto.jpg" alt="Ferrari 250 GTO">
+                    <span class="year-badge">1962</span>
+                </div>
+                <div class="card-body">
+                    <h3>Ferrari 250 GTO</h3>
+                    <p>Una delle vetture d'epoca più rinomate, preziose, eleganti e vincenti di tutta la storia dell'automobile mondiale.</p>
+                    <div class="card-specs">
+                        <div><span>Potenza:</span> <strong>300 CV</strong></div>
+                        <div><span>Velocità:</span> <strong>280 km/h</strong></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ferrari Web Site - Passione Italiana</p>
+    </footer>
+
+    <script>
+        function toggleFerrari() {
+            var sezione = document.getElementById("galleria");
+            var btnText = document.getElementById("btn-text");
+            var btnIcon = document.getElementById("btn-icon");
+
+            if (sezione.classList.contains("hidden")) {
+                sezione.classList.remove("hidden");
+                btnText.textContent = "Nascondi Ferrari Famose";
+                btnIcon.className = "fa-solid fa-eye-slash";
+                
+                sezione.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                sezione.classList.add("hidden");
+                btnText.textContent = "Mostra Ferrari Famose";
+                btnIcon.className = "fa-solid fa-eye";
+            }
+        }
+    </script>
+
+</body>
+</html>

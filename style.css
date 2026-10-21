@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(18, 18, 18, 0.95);
+    border-bottom: 1px solid #2a2a2a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.badge-scuderia {
+    background-color: #FFEB00;
+    color: #000000;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+
+.logo-text .dot {
+    color: #E30613;
+}
+
+nav .nav-link {
+    color: #cccccc;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    transition: color 0.3s ease;
+}
+
+nav .nav-link:hover,
+nav .nav-link.active {
+    color: #E30613;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.sub-badge {
+    color: #E30613;
+    background-color: rgba(227, 6, 19, 0.15);
+    border: 1px solid rgba(227, 6, 19, 0.4);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: #E30613;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #aaaaaa;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+.btn, .btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(227, 6, 19, 0.3);
+    background-color: #E30613;
+    color: #ffffff;
+}
+
+.btn:hover, .btn-link:hover {
+    background-color: #ff1e27;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(227, 6, 19, 0.5);
+}
+
+.hero-image-container {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #2a2a2a;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    display: block;
+}
+
+.img-caption {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #FFEB00;
+}
+
+.gallery-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.gallery-section.hidden {
+    display: none;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.section-title p {
+    color: #888888;
+}
+
+.grid-ferrari {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #E30613;
+}
+
+.card-img-wrapper {
+    position: relative;
+    height: 180px;
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.year-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #FFEB00;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    color: #E30613;
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    font-size: 0.85rem;
+    color: #cccccc;
+    margin-bottom: 15px;
+}
+
+.card-specs {
+    border-top: 1px solid #2a2a2a;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #888888;
+}
+
+.card-specs strong {
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #2a2a2a;
+    color: #666666;
+    font-size: 0.85rem;
+    margin-top: 60px;
+}

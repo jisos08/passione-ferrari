@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Ferrari Web Site</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span class="badge-scuderia">
+                <i class="fa-solid fa-horse"></i>
+            </span>
+            <span class="logo-text">FERRARI<span class="dot">.IT</span></span>
+        </div>
+        <nav>
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="famose.html" class="nav-link">Modelli</a>
+            <a href="storia.html" class="nav-link">Storia</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section senza immagine -->
+    <section class="hero-section" style="justify-content: center; text-align: center; max-width: 900px;">
+        <div class="hero-content" style="flex: none; width: 100%;">
+            <span class="sub-badge"><i class="fa-solid fa-flag-checkered"></i> Il Mito di Maranello</span>
+            <h1 style="font-size: 3rem;">Benvenuti al Ferrari Web Site</h1>
+            <p class="subtitle" style="font-size: 1.4rem; margin-top: 15px;">Un viaggio esclusivo nel cuore dell'eccellenza, della velocità e del design italiano.</p>
+            <p class="description" style="font-size: 1.1rem; max-width: 700px; margin: 20px auto;">
+                Esplora la storia della Scuderia più vincente di sempre, scopri i modelli stradali più iconici e vivi la passione senza tempo per il Cavallino Rampante.
+            </p>
+            
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 35px;">
+                <a href="famose.html" class="btn-link">
+                    <i class="fa-solid fa-car"></i> Esplora i Modelli
+                </a>
+                <a href="storia.html" class="btn-link" style="background-color: #2a2a2a; color: #ffffff;">
+                    <i class="fa-solid fa-book-open"></i> Leggi la Storia
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezioni di navigazione rapida -->
+    <section class="gallery-section" style="margin-top: 40px;">
+        <div class="section-title">
+            <h2>Esplora il Mondo Ferrari</h2>
+            <p>Seleziona una sezione per continuare la navigazione nel sito.</p>
+        </div>
+
+        <div class="grid-ferrari" style="max-width: 900px; margin: 0 auto; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));">
+            
+            <div class="card" style="padding: 30px; text-align: center;">
+                <div style="font-size: 2.5rem; color: #E30613; margin-bottom: 15px;">
+                    <i class="fa-solid fa-car-side"></i>
+                </div>
+                <h3 style="color: #ffffff; font-size: 1.5rem; margin-bottom: 10px;">Le Ferrari più Famose</h3>
+                <p style="color: #aaaaaa; margin-bottom: 20px;">
+                    Dalla leggendaria F40 alla moderna SF90 Stradale: scopri le schede tecniche, le prestazioni e la galleria dei modelli storici.
+                </p>
+                <a href="famose.html" class="btn-link" style="padding: 12px 25px; font-size: 0.9rem; justify-content: center;">
+                    Vai ai Modelli <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="card" style="padding: 30px; text-align: center;">
+                <div style="font-size: 2.5rem; color: #E30613; margin-bottom: 15px;">
+                    <i class="fa-solid fa-book"></i>
+                </div>
+                <h3 style="color: #ffffff; font-size: 1.5rem; margin-bottom: 10px;">La Storia del Mito</h3>
+                <p style="color: #aaaaaa; margin-bottom: 20px;">
+                    Ripercorri le tappe fondamentali: dalla fondazione della Scuderia nel 1929 da parte di Enzo Ferrari fino ai trionfi in Formula 1.
+                </p>
+                <a href="storia.html" class="btn-link" style="padding: 12px 25px; font-size: 0.9rem; justify-content: center; background-color: #2a2a2a;">
+                    Scopri la Storia <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Ferrari Web Site - Passione Italiana</p>
+    </footer>
+
+</body>
+</html>
